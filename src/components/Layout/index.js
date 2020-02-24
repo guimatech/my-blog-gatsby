@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import * as S from "./styled"
+import * as S from './styled'
 import GlobalStyles from '../../styles/global'
 import Sidebar from '../Sidebar'
 import MenuBar from '../MenuBar'
