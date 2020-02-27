@@ -19,6 +19,9 @@ const IndexPage = () => {
                 description
               }
               timeToRead
+              fields {
+                slug
+              }
             }
           }
         }
@@ -29,15 +32,16 @@ const IndexPage = () => {
   const postList = allMarkdownRemark.edges
 
   return <Layout>
-    <SEO title="Home" />
+    <SEO title='Home' />
     {postList.map(({
       node: {
         frontmatter: { background, category, date, title, description },
-        timeToRead
+        timeToRead,
+        fields: { slug }
       }
     }) => (
       <PostItem
-        slug='/about/'
+        slug={slug}
         background={background}
         category={category}
         date={date}
