@@ -10,7 +10,6 @@ background: "#7AAB13"
 
 Quanto mais se compartilha conhecimento mais se ganha conhecimento e inspirado por isso e por experiências um tanto malucas no mercado de software escrevi este humilde artigo para compartilhar algumas lições que tirei dessas experiências.
 
-
 ## **10 Motivos para você usar técnicas de clean code**
 
 1. Perda de tempo tentando entender o código;
