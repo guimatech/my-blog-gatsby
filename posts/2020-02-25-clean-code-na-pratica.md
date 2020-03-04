@@ -89,7 +89,7 @@ Sem mais delongas, vamos as técnicas e exemplos, separei esses por escopo para 
 - **Problema**: Existe um fragmento de código que poderia ser agrupado para tornar a lógica mais fácil de ser entendida.
 - **Solução**: Transforme o fragmento de código em um método cujo nome explique o propósito do mesmo.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEZle2TAduWlA/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=bTz2tpgz4HVyRPJ2I-52YdS0AeJw_HGG8y40F5fQAcs)
+![Extração de métodos](/assets/img/extracao-metodo.png)
 
 **Internalizar métodos**
 
@@ -97,7 +97,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Coloque o corpo do método dentro do que o chama e remova o método.
 - **Dica adicional**: Crie métodos de poucas linhas (1 ou 2 +/-) com nome claro para um IF, por exemplo.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQFyJwf7ASptqw/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=xvLAtPdd3Mkb1WO27JlhD6OAJLtKrYQ0N9fef4PqALs)
+![Internalizar métodos](/assets/img/internalizar-metodo.png)
 
 ### **Separar a Consulta do Modificador**
 
@@ -105,7 +105,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Crie dois métodos: um para consulta e um para a modificação.
 - **Observação**: Eric Evans, em Domain-Driven Design (2004), se refere a esse tipo de Problema como "Side-Effect free functions".
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGLs_4ZOkbtmQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=Gq4AHkg4elXhAPLubeU0X7wLuMcRRbLMY5oPhVtGaxU)
+![Separar a Consulta do Modificador](https://media-exp1.licdn.com/dms/image/C4E12AQGLs_4ZOkbtmQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=Gq4AHkg4elXhAPLubeU0X7wLuMcRRbLMY5oPhVtGaxU)
 
 ### **Renomear Método**
 
@@ -113,7 +113,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Altere nome do método.
 - **Atenção**: Não é aconselhável que se altere assinaturas de métodos no servidor invocados por n clientes.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQFSG-q-A-CQAQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=it7XX4DAN2CofaL3cGD-eQ6SUJ8lQCIyCGeME1YURq4)
+![Renomear Método](https://media-exp1.licdn.com/dms/image/C4E12AQFSG-q-A-CQAQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=it7XX4DAN2CofaL3cGD-eQ6SUJ8lQCIyCGeME1YURq4)
 
 ## **Sobre Variáveis**
 
@@ -123,7 +123,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Substitua todas as referências a essa variável temporária pela expressão.
 - **Observação**: Não mudar se a rotina envolve cálculos, pois as variáveis podem simplificar o entendimento desses cálculos.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQF0vLYHbyJ05g/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=_saaL8LE41PBdy_9I3IPo935opd4LVWzXIpIXW4dXqs)
+![Internalizar variável temporária](https://media-exp1.licdn.com/dms/image/C4E12AQF0vLYHbyJ05g/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=_saaL8LE41PBdy_9I3IPo935opd4LVWzXIpIXW4dXqs)
 
 ### **Substituir variável temporária por consulta**
 
@@ -131,14 +131,14 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Extraia a expressão para um método. Substituir todas as referências à variável temporária pelo método.
 - **Observação**: Não fazer isso quando a expressão envolver acesso a banco, por conta da performance.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGW9uBpQoGjug/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=fkB7_Ls_ozE-bmyG3MiW7jvwGvGEwh33LdwHD2OcEps)
+![Substituir variável temporária por consulta](https://media-exp1.licdn.com/dms/image/C4E12AQGW9uBpQoGjug/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=fkB7_Ls_ozE-bmyG3MiW7jvwGvGEwh33LdwHD2OcEps)
 
 ### **Introduzir variável explicativa**
 
 - **Problema**: Existe uma expressão complicada.
 - **Solução**: Coloque a expressão - ou partes dela - em uma variável temporária cujo único objetivo é explicar o seu propósito.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGqRiueuPXeUQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=FRuR33ue_4bl9YCMZi1aHQ5u9T8w-wNV_05U7wuShgE)
+![Introduzir variável explicativa](https://media-exp1.licdn.com/dms/image/C4E12AQGqRiueuPXeUQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=FRuR33ue_4bl9YCMZi1aHQ5u9T8w-wNV_05U7wuShgE)
 
 ### **Dividir variável temporária**
 
@@ -146,7 +146,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Crie uma variável temporária para cada atribuição.
 - **Observação**: Essa solução pode ser ainda mais refinada, mas a critério de exemplo vamos deixar assim, para não causar confusão.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGfh7jTAD3XKA/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=DaF0G3dTe2LlywAYdGNWrra6cICKlJcw39XuHDx68KM)
+![Dividir variável temporária](https://media-exp1.licdn.com/dms/image/C4E12AQGfh7jTAD3XKA/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=DaF0G3dTe2LlywAYdGNWrra6cICKlJcw39XuHDx68KM)
 
 ### **Remover atribuições a parâmetros**
 
@@ -154,7 +154,7 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Crie uma variável que recebe o parâmetro, demais atribuições e/ou operações.
 - **Observação**: Essa prática é particularmente interessante, porque dá a segurança (caso o parâmetro seja por referência) que o valor do parâmetro não vai ser alterado.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEO52vHDGOhDQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=TGf3UGg1Lk3pOV6Q3bqqm0dVADhxeq_ympHYxvsngYk)
+![Remover atribuições a parâmetros](https://media-exp1.licdn.com/dms/image/C4E12AQEO52vHDGOhDQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=TGf3UGg1Lk3pOV6Q3bqqm0dVADhxeq_ympHYxvsngYk)
 
 ## **Sobre Condicionais**
 
@@ -163,22 +163,21 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Problema**: Há uma estrutura condicional complicada.
 - **Solução**: Crie uma variável que explique a condicional complicada.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQF-UfAm6CEnNQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=1kLRa0aNZqLCTCl21I9VgNEMQff-1IbLSlQ4YHsyXL0)
+![Decompor condicional](https://media-exp1.licdn.com/dms/image/C4E12AQF-UfAm6CEnNQ/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=1kLRa0aNZqLCTCl21I9VgNEMQff-1IbLSlQ4YHsyXL0)
 
 ### **Consolidar expressão condicional**
 
 - **Problema**: Existe uma sequência de testes com o mesmo resultado.
 - **Solução**: Consolide-os em uma única expressão e extrai-a.
 
-
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEuwxRZ8d11gQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=yoVAT-pEjNrExJwiYYTR_tTwjwDX5jtnSJR4cyo2slY)
+![Consolidar expressão condicional](https://media-exp1.licdn.com/dms/image/C4E12AQEuwxRZ8d11gQ/article-inline_image-shrink_1500_2232/0?e=1588204800&v=beta&t=yoVAT-pEjNrExJwiYYTR_tTwjwDX5jtnSJR4cyo2slY)
 
 ### **Consolidar fragmentos condicionais duplicados**
 
 - **Problema**: O mesmo fragmento de código parece duplicado em todos os termos de uma expressão.
 - **Solução**: Mova-os para fora da expressão.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEXfG9nADnipg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=CZZXpzOgoXCl6NmFOPg7jvNahIOZsACogrnGCjrC8nU)
+![Consolidar fragmentos condicionais duplicados](https://media-exp1.licdn.com/dms/image/C4E12AQEXfG9nADnipg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=CZZXpzOgoXCl6NmFOPg7jvNahIOZsACogrnGCjrC8nU)
 
 ### **Polimorfismo**
 
@@ -186,14 +185,14 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Solução**: Mova cada ramificação do comando condicional para um método de sobrescrita em uma subclasse. Torne abstrato o método original.
 - **Observação**: O exemplo foi bem abstrato, mas imagine isso para a emissão de relatórios de extrato (diário, semanal, mensal, etc.).
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEo7_dz8o77QA/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=xNA7qh-aVdClvBiXh0WawO88UJqwTfqwk6zOCInvEkA)
+![Polimorfismo](https://media-exp1.licdn.com/dms/image/C4E12AQEo7_dz8o77QA/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=xNA7qh-aVdClvBiXh0WawO88UJqwTfqwk6zOCInvEkA)
 
 ### **Remover condição aninhada por cláusulas guarda**
 
 - **Problema**: Um método tem uma lógica condicional que não deixa claro o fluxo normal da execução.
 - **Solução**: Crie rotas de saída do algoritmo de forma rápida, diminuindo o número de códigos aninhados e evitando que o código de processamento complexo (ou código principal) seja atingido quando não necessário.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQEohc0HsSwQJg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=sZOA5mQCOgcI6QNEmEZcdXFgeaTAH4jtGq6-LAP9lsw)
+![Remover condição aninhada por cláusulas guarda](https://media-exp1.licdn.com/dms/image/C4E12AQEohc0HsSwQJg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=sZOA5mQCOgcI6QNEmEZcdXFgeaTAH4jtGq6-LAP9lsw)
 
 ## **Sobre Parametrização de métodos**
 
@@ -202,28 +201,28 @@ Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imag
 - **Problema**: Diversos métodos fazem coisas semelhantes, mas com diferentes valores contidos no corpo do método.
 - **Solução**: Crie um método que utilize parâmetro para diferentes valores.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQHQR38eMAQrQA/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=e-jtSIu52dLsRNIZf6g2Dl_19ayWiP9xbyua1szG3r8)
+![Parametrizar Métodos](https://media-exp1.licdn.com/dms/image/C4E12AQHQR38eMAQrQA/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=e-jtSIu52dLsRNIZf6g2Dl_19ayWiP9xbyua1szG3r8)
 
 ### **Substituir parâmetro por métodos explícitos**
 
 - **Problema**: Há um método que se executa diferentes códigos de acordo com os valores de um parâmetro.
 - **Solução**: Crie um método separado para cada valor do parâmetro.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGn7y88rXgKig/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=ir0hUCSLg0KstgGn6DxI2VbKnJlSEnsMX6XHFDbXlR8)
+![Substituir parâmetro por métodos explícitos](https://media-exp1.licdn.com/dms/image/C4E12AQGn7y88rXgKig/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=ir0hUCSLg0KstgGn6DxI2VbKnJlSEnsMX6XHFDbXlR8)
 
 ### **Preservar o objeto inteiro**
 
 - **Problema**: Você está lendo diversos valores de um objeto e passando esses valores como parâmetros em uma chamada de outro método.
 - **Solução**: Em vez de fazer isso, envie o objeto inteiro.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGmgw7OVVo3Dg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=KdYyDG8Aj6NVCiKK_f18stRzWwWxDMaiqdqoWAQmBiM)
+![Preservar o objeto inteiro](https://media-exp1.licdn.com/dms/image/C4E12AQGmgw7OVVo3Dg/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=KdYyDG8Aj6NVCiKK_f18stRzWwWxDMaiqdqoWAQmBiM)
 
 ### **Introduzir objeto parâmetro**
 
 - **Problema**: Há um grupo de parâmetros que naturalmente andam juntos.
 - **Solução**: Substitua-os por um objeto.
 
-Adicionar texto alternativo![Não foi fornecido texto alternativo para esta imagem](https://media-exp1.licdn.com/dms/image/C4E12AQGHrpduVb8V_w/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=OmLlS6ZFBEaGp1ekRw4grh42YABiMUoAX7QQITHSxz4)
+![Introduzir objeto parâmetro](https://media-exp1.licdn.com/dms/image/C4E12AQGHrpduVb8V_w/article-inline_image-shrink_1000_1488/0?e=1588204800&v=beta&t=OmLlS6ZFBEaGp1ekRw4grh42YABiMUoAX7QQITHSxz4)
 
 ## **Conclusão**
 
