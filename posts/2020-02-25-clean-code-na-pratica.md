@@ -4,6 +4,7 @@ title: Clean code na prática
 description: Veja como aplicar várias técnicas de clean code na PRÁTICA!
 category: Misc
 background: "#7AAB13"
+image: "/assets/img/extracao-metodo.png"
 ---
 
 # Clean Code na Prática
