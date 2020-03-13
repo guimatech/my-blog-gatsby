@@ -2,7 +2,7 @@
 date: 2020-02-25 05:54:23
 title: Clean code na prática
 description: Veja como aplicar várias técnicas de clean code na PRÁTICA!
-category: Misc
+category: Dev
 background: "#7AAB13"
 image: "/assets/img/extracao-metodo.png"
 ---
