@@ -36,6 +36,7 @@ const MenuBar = () => {
           bg={getThemeColor()}
           duration={0.6}
           title='Voltar para Home'
+          activeClassName='active'
         >
           <S.MenuBarItem><Home /></S.MenuBarItem>
         </S.MenuBarLink>
@@ -46,6 +47,7 @@ const MenuBar = () => {
           bg={getThemeColor()}
           duration={0.6}
           title='Pesquisar'
+          activeClassName='active'
         >
           <S.MenuBarItem><Search /></S.MenuBarItem>
         </S.MenuBarLink>
