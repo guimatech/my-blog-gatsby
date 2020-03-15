@@ -1,15 +1,11 @@
 ---
 date: 2020-02-25 05:54:23
 title: Clean code na prática
-description: Veja como aplicar várias técnicas de clean code na PRÁTICA!
+description: 'Quanto mais se compartilha conhecimento mais se ganha conhecimento e inspirado por isso e por experiências um tanto malucas no mercado de software escrevi este humilde artigo para compartilhar algumas lições que tirei dessas experiências.'
 category: Dev
 background: "#7AAB13"
 image: "/assets/img/extracao-metodo.png"
 ---
-
-# Clean Code na Prática
-
-Quanto mais se compartilha conhecimento mais se ganha conhecimento e inspirado por isso e por experiências um tanto malucas no mercado de software escrevi este humilde artigo para compartilhar algumas lições que tirei dessas experiências.
 
 ## **10 Motivos para você usar técnicas de clean code**
 
@@ -23,7 +19,6 @@ Quanto mais se compartilha conhecimento mais se ganha conhecimento e inspirado p
 8. Confiança do cliente;
 9. Código complexos que escondem regras mais simples;
 10. Ser mais produtivo.
-
 
 ## **Números absurdos**
 
@@ -47,7 +42,6 @@ Se você mesmo depois de executar as duas primeiras chegou na **opção 3,** par
 
 Vou tentar te ajudar um pouco com esse artigo.
 
-
 ## O que pode ser classificado como o famigerado Code Smells (Código fedido)?
 
 Não é muito difícil saber que um código está ruim, você está lendo ou desenvolvendo algo e de repente para e pensa “isso aqui não tá legal”, mas muitas vezes você não sabe direito porque ou não sabe como pode fazer melhor no tempo que você tem, algumas das características desse código geralmente são:
@@ -64,7 +58,6 @@ Não é muito difícil saber que um código está ruim, você está lendo ou des
 - Alto acoplamento (Para usar uma coisinha carrega um mundo classes);
 - Métodos com muitos parâmetros.
 
-
 ## Medindo a qualidade do código
 
 Os dados que medem a qualidade de um código são muitos e é muito interessante que se conheça eles através de leitura, cursos e palestras que falam sobre o assunto, algumas das coisas que devem ser levadas em consideração nessa medição são: quantidade e/ou tamanho de linhas de código, complexidade ciclomática, número de classes, linhas de código por método, número de estruturas de decisão aninhadas, número de métodos por classe.
@@ -76,7 +69,6 @@ Contudo existem diversas ferramentas que ajudam não só a medir a qualidade de 
 - Em Ruby, o rubocop.
 
 Bem, essas são algumas das ferramentas que conheço, mas cada linguagem tem sua gama de ferramentas para serem usadas para esse e outras finalidades.
-
 
 ## **Técnicas**
 
