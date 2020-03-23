@@ -5,7 +5,7 @@ import ReactDisqusComments from 'react-disqus-comments'
 import * as S from './styled'
 
 const Comments = ({ url, title }) => {
-  const completeURL = `https://guimaraes-lucas.github.io${url}`
+  const completeURL = `https://guimaraes.netlify.com${url}`
 
   return (
     <S.CommentsWrapper>

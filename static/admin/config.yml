@@ -2,7 +2,7 @@ backend:
   name: github
   repo: guimaraes-lucas/my-blog-gatsby
   branch: master
-  site_domain: https://guimaraes-lucas.netlify.com
+  site_domain: https://guimaraes.netlify.com
   
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
