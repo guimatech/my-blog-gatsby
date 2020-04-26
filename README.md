@@ -5,8 +5,9 @@
   My blog in gatsby
 </h1>
 
-| ![Main page](./assets/light-1.jpeg) | ![Post page](./assets/light-2.jpeg) | ![Search page](./assets/light-3.jpeg) |
-| ------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| ![Main page](./assets/dark-1.jpeg)  | ![Post page](./assets/dark-2.jpeg)  | ![Search page](./assets/dark-3.jpeg)  |
+| Main page                           | Post page                           | Search page                           | Comments area                           |
+| ----------------------------------- | ----------------------------------- | ------------------------------------- | --------------------------------------- |
+| ![Main page](./assets/light-1.jpeg) | ![Post page](./assets/light-2.jpeg) | ![Search page](./assets/light-3.jpeg) | ![Comments area](./assets/light-4.jpeg) |
+| ![Main page](./assets/dark-1.jpeg)  | ![Post page](./assets/dark-2.jpeg)  | ![Search page](./assets/dark-3.jpeg)  | ![Comments area](./assets/dark-4.jpeg)  |
 
 visit: http://guimaraes-lucas.github.io
