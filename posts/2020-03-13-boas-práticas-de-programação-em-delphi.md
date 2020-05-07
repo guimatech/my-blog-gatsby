@@ -4,7 +4,7 @@ description: >-
   "Qualquer tolo consegue escrever um código que o computador entenda, bons
   programadores escrevem código que humanos entendam" - Martin Fowler
 date: '2020-03-12 11:59:51'
-thumbnail: assets/img/0-2.jpeg
+thumbnail: /assets/img/0-2.jpeg
 category: dev
 background: '#637a91'
 ---

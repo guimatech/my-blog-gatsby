@@ -3,7 +3,7 @@ title: Trabalhar com TI vai além de lidar com o computador
 description: Certas softskills são bastante importantes no nosso dia-a-dia, aqui
   vou falar de uma delas
 date: 2020-05-06 08:48:44
-thumbnail: assets/img/keynote-innovation-und-innovationskultur.jpeg
+thumbnail: /assets/img/keynote-innovation-und-innovationskultur.jpeg
 category: dicas
 background: "#2DA0C3"
 ---
@@ -26,7 +26,7 @@ Neste artigo vou contar à você algumas experiências de aprendizado que tive, 
 
 ## Obtendo o melhor de cada um
 
-![](assets/img/image.jpeg)
+![](/assets/img/image.jpeg)
 
 Há quem faça de tudo para conseguir o que quer e às vezes passa por cima de tudo e todos para isso, há também quem tenta impor a sua “opinião certa” sobre as “opiniões erradas” das outras pessoas.
 
@@ -42,7 +42,7 @@ O princípio aqui é*“Não critique, não condene, não se queixe”*e aqui eu
 
 ## Um segredo ao tratar com alguém
 
-![](assets/img/image.jpg)
+![](/assets/img/image.jpg)
 
 Saber lidar com as pessoas pode ser, em alguns casos, mais importante que um intelecto gigantesco, pois quando você pensa, por exemplo: “o que já fiz para conquistar admiração?” ou “o que já testemunhei fazerem por um elogio?”, logo nos vem várias situações ou pessoas à memória.
 
@@ -58,7 +58,7 @@ O princípio está na apreciação honesta e sincera, é como diz o ditado "Pass
 
 ## Como um verdadeiro líder “fisga” os outros
 
-![](assets/img/image-2-.png)
+![](/assets/img/image-2-.png)
 
 Alguém disse que “Eu gosto de morango com creme, mas os peixes preferem minhocas e gafanhotos”, e isso faz com que eu me pergunte porque não usar esse princípio para “pescar” pessoas?
 
@@ -72,7 +72,7 @@ O princípio está em despertar um forte desejo na outra pessoa, aprendendo a ve
 
 ## Seja bem-vindo em qualquer lugar
 
-![](assets/img/1image.jpg)
+![](/assets/img/1image.jpg)
 
 Pense em um animal de estimação, eles são os únicos animais que não trabalham para viver, eles vivem de*dar amor*… Quando pensamos em nossos*pets*e nos preocupamos com seu bem estar simplesmente pelo fato deles terem cativado nosso amor, em momentos como quando chegamos em casa, eles demonstram uma enorme alegria, latindo/miando, correndo e saltando.
 
