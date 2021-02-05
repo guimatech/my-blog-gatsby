@@ -1,3 +1,13 @@
+---
+title: Git para quando dá ruim
+description: Sabe aquelas coisas que você não sabe que existe até precisar, ou não sabe que precisa até aprender?
+date: 2021-05-02 11:34:00
+thumbnail: /assets/img/git.jpg
+category: dicas
+background: "#2DA0C3"
+---
+<!--StartFragment-->
+
 # Git para quando *dá ruim*
 
 Sabe aquelas coisas que você não sabe que existe até precisar, ou não sabe que precisa até aprender?
